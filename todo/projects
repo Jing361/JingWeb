@@ -1,0 +1,149 @@
+[
+DnD campaign things
+]
+[
+Youtube video downloader and restreamer.
+  -Download youtube videos based on a user's subscriptions
+    -http://gdata.youtube.com
+    -Parse XML with python
+      -Item tags for subscriptions http://gdata.youtube.com/feeds/api/users/jingofkozilek/subscriptions?alt=rss
+      -Item tags for recently uploaded videos http://gdata.youtube.com/feeds/api/users/northernlion/uploads?alt=rss&orderby=published&safeSearch=none
+    -Download video with VLC
+    -Make video available for restream with VLC
+    -Videos can be filtered out based on user search criteria
+      -Remove all binding of isaac videos, or all content patch etc etc
+]
+[
+Dynamic emulator and ISA translator
+  -Emulator that will emulate a given instruction set
+    -Provide presets
+  -translate the given ISA into HDL for functioning hardware based on the given ISA
+]
+[
+Game engine..just in general
+  -Graphics
+    -good transparency processing?
+  -Gameplay
+  -whatever ya got
+  -preferably using function calls and callbacks as opposed to scripting
+    -why not zoidberg?(both)
+  -Support the concept of AI expectations
+    -context, expectations, and reactions
+    -an AI will expect certain objects or sounds in a given context, and will react to ones that aren't expected
+    -eg: spy game, player mission is to launch a foreign missle to a 3rd counttry (american spy, german missle, russian target); silo guards will react differently to a missle launching if germany is not at war than if germany is at war.  so if the player is a sufficient spy that gets the job done, but perhaps more noisily, then the germany will be at war, making guards more generally alert, but not react to the missle launch, but if they're very sneaky then the guards will be more lax, but will really freak out at the missle launch.  simple things like that.
+    -risk, reward, threat system for opposing AI.  evaluates potential reward for an action (killing player), the risk involved (player's equipment and level), and the threat that player poses to the AI (has killed similar species in the area)
+        -base on grey scale, not binary.  so AIs that are similar to others you have recently killed will be wary and avoid slightly, and start to avoid a lot with more kills, and begin to hide eventually.
+  -native binaural sound and stereo vision support
+  -built in basic AI algorithms
+  -AI using camera as percepts
+    -parse video feed to determine environment etc
+    -video will be translated into useful/standard AI percepts
+  -maze building
+    -djekstra's, pim's
+]
+[
+Starship models
+  Star Trek
+  -Voyager
+  -Enterprise D
+  -Enterprise E
+  -Delta Flyer
+  -Enterprise A
+  -DS9
+  BSG
+  -Viper
+  -Cylon Raider
+  Star Wars
+  -X Wing
+  -Tie Fighter
+  -Y Wing
+  -Tie Advanced
+  -A Wing
+  -Tie Bomber
+  -Millenium Falcon
+  -Larger class ships
+]
+[
+GDK (Galaxy Development Kit)
+  -argparser
+  -associated with game engine
+  -basic data structures and useful algorithms
+    -AI ones, and sorting ones and the like
+    -security/encryption
+  -provide AI algorithms that are abstracted to general use
+  -ricci flow? given a shape, it will change shape based on curvature, maybe preserving volume/area or perimeter.
+    -might be useful for aesthetics, pulsating blobs etc
+    -sounds cool :D
+  -probably will require rewrite from current state
+    -sorta based on Java framework
+    -/avoid/ multiple inheritance
+    -using multiple inheritance with things like runnable is probably ok
+  -encryption algorithms/classes
+  -DB
+  -djektstras, pim's
+  -learner's interface
+    -simplified bindings
+    -tuned for high level understanding
+    -more graphical approach
+    -bindings to other languages
+  -OpenID logins
+    -Google, facebook, twitter? others
+]
+[
+argparser
+  -Argument parser
+]
+[
+Sim City Like traffic simulator
+]
+[
+MTG online multiplayer.
+  -text space parser (utilize python for this bit?)
+  -card database
+    -existing options include:
+      http://mtgjson.com/
+      http://www.crystalkeep.com/magic/rules/summaries.php
+      https://github.com/davidchambers/tutor
+      http://www.mtgsalvation.com/forums/magic-fundamentals/digital-magic-and-mtg-software/337224-mtg-gatherer-extractor-v3-8-database-pics
+  -use altcoin for purchasing new card packs
+    -game server mines the coins to create a coin pool to pay players with
+    -money from bought packs goes into payout pool
+    -allows users to mine coins to get their packs, not strictly in game stuff
+    -more like a real TCG
+  -allow card trading
+  -Possibly abstract or extend to include munchkin or other card games
+]
+[
+MetaTacToe and AI
+  -'meta'-tic-tac-toe game in which each space contains a standard TTT game, from which the winner takes the corresponding space in the higher level game
+  -2player local
+  -2player online
+  -AI opponent
+  -Choose AI algorithms used and parameters for each game
+    -GA
+    -GP
+    -A*
+    -minimax
+    -depthfirst
+    -breadthfirst
+    -simulated annealing
+    -hill climbing
+    -neural networks
+]
+[
+2048 Game and AI
+  -https://ov3y.github.io/2048-AI/
+  -https://sztupy.github.io/2048-Hard/
+]
+[
+Team OS
+  -allow things like copy on one computer and paste copied contents on another linked computer
+  -viewing another connected users desktop
+    -using workspaces?
+      -one workspace is your own, another is a connected user
+]
+[
+DreamWeaver/SleepHarvest/Sandmen
+  -see /var/www/stories/dreamsDealer
+]
+
